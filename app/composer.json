@@ -1,25 +1,37 @@
 {
-    "version": "3.0.0",
+    "version": "4.0.0",
     "description": "Symfony project bootstrap",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.1",
+        "php": "8.4.*",
         "ext-ctype": "*",
         "ext-curl": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^2.6",
-        "doctrine/doctrine-migrations-bundle": "^3.2",
-        "doctrine/orm": "^2.11",
-        "symfony/dotenv": "6.3.*",
+        "doctrine/doctrine-bundle": "^3.2",
+        "doctrine/doctrine-migrations-bundle": "^4.0",
+        "doctrine/orm": "^3.6",
+        "symfony/dotenv": "*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "6.3.*",
-        "symfony/http-client": "6.3.*",
-        "symfony/monolog-bundle": "^3.8",
-        "symfony/runtime": "6.3.*",
-        "symfony/yaml": "6.3.*"
+        "symfony/framework-bundle": "*",
+        "symfony/http-client": "*",
+        "symfony/monolog-bundle": "^4.0",
+        "symfony/runtime": "*",
+        "symfony/yaml": "*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.5",
+        "phpstan/phpstan-phpunit": "^1.1",
+        "phpstan/phpstan-symfony": "^1.1",
+        "phpunit/phpunit": "^9.0",
+        "symfony/phpunit-bridge": "*",
+        "symfony/stopwatch": "*",
+        "symfony/twig-bundle": "8.0.*",
+        "symfony/web-profiler-bundle": "*"
     },
     "config": {
         "allow-plugins": {
@@ -78,17 +90,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "6.3.*"
+            "require": "8.0.*"
         }
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.8",
-        "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan": "^1.5",
-        "phpstan/phpstan-phpunit": "^1.1",
-        "phpstan/phpstan-symfony": "^1.1",
-        "phpunit/phpunit": "^9.5",
-        "symfony/phpunit-bridge": "6.3.*"
     }
 }
