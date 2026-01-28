@@ -60,7 +60,7 @@ folder with empty one (repository has no `vendor` folder intentionally). So, we 
 configuration:
 
 ```shell
-docker compose exec app bash -ce "
+docker compose exec app sh -ce "
     composer install
     chown -R $(id -u):$(id -g) .
   "
@@ -99,7 +99,7 @@ In the main Dockerfile I used [caddy-php](https://github.com/at-cloud-pro/caddy-
 image that uses Caddy as a runner and php-fpm as a daemon.
 
 ```dockerfile
-FROM ghcr.io/at-cloud-pro/caddy-php:3.0.0 AS app
+FROM ghcr.io/at-cloud-pro/caddy-php:5.0.0 AS app
 ```
 
 You're free to change it to any image and configuration you'd like. You may read
